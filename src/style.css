@@ -1,0 +1,382 @@
+.body {
+    background-image: url("background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#root {
+
+
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.image1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.img {
+    margin-bottom: -79px;
+    padding-top: 21px;
+
+}
+
+.btnimg {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.btnimg:hover {
+
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.btnimgg {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.btnimgg:hover {
+
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+.btnimg:active {
+    width: 120%;
+    transform: rotate(-5deg);
+
+}
+
+
+.fixed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.abs {
+    position: fixed;
+    top: 32px;
+    right: 3%;
+    width: 96%;
+}
+
+@media screen and (max-width:1043px) {
+    .abs {
+        top: 186px;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:745px) {
+    .abs {
+        top: 186px;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .abs {
+        top: 28vw;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:459px) {
+    .abs {
+        top: 36vw;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:372px) {
+    .abs {
+        top: 41vw;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:272px) {
+    .abs {
+        top: 44vw;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:257px) {
+    .abs {
+        top: 86vw;
+        right: 3%;
+        width: 96%;
+    }
+
+    .resp {
+        max-width: 100%;
+        width: 66%;
+    }
+}
+
+
+
+@keyframes example {
+    from {
+        transform: rotate(5deg);
+    }
+
+    to {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes examples {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 9%;
+
+
+}
+
+.inbtn {
+    padding: 0 20px;
+    flex: 0 0 %;
+}
+
+
+
+.hero {
+    max-width: 80%;
+    height: auto
+}
+
+.item1 {
+    order: 1;
+    flex-grow: 1;
+}
+
+.item2 {
+    order: 1;
+    flex-grow: 1;
+}
+
+.item3 {
+    order: 2;
+    flex-grow: 0;
+}
+
+
+
+@media screen and (min-width: 469px) {
+    .hero {
+        max-width: 97%;
+        padding: 65pxx;
+        padding-bottom: 5vh;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .hero {
+        max-width: 97%;
+        padding: 65pxx;
+        padding-bottom: 7vh;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .hero {
+        max-width: 97%;
+        padding: 65pxx;
+        padding-bottom: 5vh;
+        padding-top: 43px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        flex-basis: 20px;
+    }
+
+
+    .space {
+        padding: 10px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+}
+
+@media screen and (max-width: 613px) and (min-width: 459px) {
+    .hero {
+        max-width: 89%;
+        padding: 65pxx;
+        padding-bottom: 2vh;
+        padding-top: 30px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        flex-basis: 20px;
+    }
+
+
+    .space {
+        padding: 10px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+}
+
+@media screen and (min-width: 969px) {
+    .hero {
+        max-width: 89vw;
+        padding: 65pxx;
+        padding-bottom: 0;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+
+}
+
+@media screen and (min-width: 1117px) {
+    .hero {
+        max-width: 72vw;
+        padding: 65pxx;
+        padding-bottom: 0;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+
+}
+
+@media screen and (max-width: 102px) {
+    .hero {
+        max-width: 97%;
+    }
+}
+
+/* for phone  */
+
+@media screen and (max-width: 256px) {
+    .hero {
+        max-width: 101%;
+        padding: 65pxx;
+        padding-bottom: 7vh;
+        padding-top: 86px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        flex-basis: 20px;
+    }
+
+
+    .space {
+        padding: 10px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .img {
+        margin-bottom: -56px;
+        padding-top: 26px;
+    }
+}
