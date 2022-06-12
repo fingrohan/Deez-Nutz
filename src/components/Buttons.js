@@ -69,15 +69,20 @@ const Buttons = () => {
     }
 
     const handleMint = () => {
-        setsuccessfulMint(false)
-        contractInstance.methods.safeMint(account).send({ from: window.ethereum.selectedAddress, gas: 1000000, gasPrice: '5000000000' }).on('transactionHash', (hash) => {
-        }).once('confirmation', function (confirmationNumber, receipt) {
-            setsuccessfulMint(true)
-        }).on('error', function (error, receipt) {
-            window.alert('Transaction failed, try again');
-            console.log(error);
-            console.log(receipt);
-        });
+        if (networkId === 4){
+            setsuccessfulMint(false)
+            contractInstance.methods.safeMint(account).send({ from: window.ethereum.selectedAddress, gas: 1000000, gasPrice: '5000000000' }).on('transactionHash', (hash) => {
+            }).once('confirmation', function (confirmationNumber, receipt) {
+                setsuccessfulMint(true)
+            }).on('error', function (error, receipt) {
+                window.alert('Transaction failed, try again');
+                console.log(error);
+                console.log(receipt);
+            });
+        }
+        else {
+            window.alert('change to rinkeby network')
+        }
     }
     return (
         <>
