@@ -1,3 +1,7 @@
 *.nc
 *.DS_store
 node_modules
+.firebaserc
+firebase.json
+build
+.firebase
