@@ -5,7 +5,8 @@ import Menu from './components/Menu';
 import Hero from './components/Hero';
 import Buttons from './components/Buttons';
 
-const App = () => {
+
+export default function App (){
     return (
         <>
             <Menu />
@@ -17,5 +18,3 @@ const App = () => {
     );
 
 };
-
-export default App;
